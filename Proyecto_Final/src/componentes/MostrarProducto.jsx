@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import "./MostrarProducto.css";
+import "./MostrarProducto.css"; 
 
 const MostrarProducto = () => {
-  const [imagenActual, setImagenActual] = useState("imagen1.jpg");
+  const [imagenActual, setImagenActual] = useState("image-product-1.jpg");
   
   const imagenes = [
-    "imagen1.jpg",
-    "imagen2.jpg",
-    "imagen3.jpg",
-    "imagen4.jpg"
+     "src/assets/imágenes/image-product-1.jpg",
+     "src/assets/imágenes/image-product-2.jpg",
+     "src/assets/imágenes/image-product-3.jpg",
+     "src/assets/imágenes/image-product-4.jpg",
   ];
 
   return (
