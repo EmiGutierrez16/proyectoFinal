@@ -1,0 +1,45 @@
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los lados */
+    align-items: center; /* Alinea verticalmente */
+    padding: 20px 40px; /* Espaciado interno */
+    width: 100%; /* Ocupar todo el ancho */
+    border-bottom: 2px solid #e0e0e0; /* Línea sutil debajo */
+    background-color: white; /* Fondo blanco */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaciado entre los elementos */
+  }
+  
+  .menu li {
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .menu li:hover {
+    color: black;
+    border-bottom: 2px solid orange;
+    padding-bottom: 5px;
+  }
+  
+  .iconos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .carrito,
+  .perfil {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

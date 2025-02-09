@@ -1,0 +1,68 @@
+.informacion-producto {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .marca {
+    color: #ff7d1a;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .descripcion {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .precio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .precio-actual {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .descuento {
+    background: #ff7d1a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+  .acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .boton-restar, .boton-sumar, .boton-agregar {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .boton-agregar {
+    background: #ff7d1a;
+    color: white;
+    border-radius: 5px;
+  }
+  
