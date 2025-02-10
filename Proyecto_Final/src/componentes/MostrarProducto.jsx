@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./MostrarProducto.css"; 
 
 const MostrarProducto = () => {
-  const [imagenActual, setImagenActual] = useState("image-product-1.jpg");
+  const [imagenActual, setImagenActual] = useState("image-product-2.jpg");
   
   const imagenes = [
      "src/assets/imágenes/image-product-1.jpg",
