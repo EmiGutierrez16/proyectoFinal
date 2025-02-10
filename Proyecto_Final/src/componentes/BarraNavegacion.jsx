@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from '../assets/imágenes/logo.svg'
-import Perfil from '../assets/imágenes/image-avatar.png';
-import CartIcon from '../assets/imágenes/icons/icon-cart.svg'
+import Logo from "../assets/imagenes/logo.svg";
+import Perfil from "../assets/imagenes/image-avatar.png";
+import CartIcon from "../assets/imagenes/icons/icon-cart.svg";
 import "./BarraNavegacion.css";
 import Carrito from "./Carrito";
 
-const BarraNavegacion = ({ toggleCarrito }) => {
-  
+const BarraNavegacion = ({ productos }) => {
+  const [toggleCarrito, setToggleCarrito] = React.useState(false);
   return (
     <nav className="barra-navegacion">
       <div className="logo">
@@ -20,8 +20,13 @@ const BarraNavegacion = ({ toggleCarrito }) => {
         <li>Contacto</li>
       </ul>
       <div className="iconos">
-      <span className="carrito">
-          <img src={CartIcon} alt="Carrito Icon" onClick={toggleCarrito} />
+        <span className="carrito">
+          <img
+            src={CartIcon}
+            alt="Carrito Icon"
+            onClick={() => setToggleCarrito(!toggleCarrito)}
+          />
+          {toggleCarrito && <Carrito productos={productos}></Carrito>}
         </span>
         <span className="perfil">
           <img src={Perfil} alt="Perfil" />

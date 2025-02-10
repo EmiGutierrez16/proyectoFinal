@@ -5,10 +5,10 @@ const MostrarProducto = () => {
   const [imagenActual, setImagenActual] = useState("image-product-2.jpg");
   
   const imagenes = [
-     "src/assets/imágenes/image-product-1.jpg",
-     "src/assets/imágenes/image-product-2.jpg",
-     "src/assets/imágenes/image-product-3.jpg",
-     "src/assets/imágenes/image-product-4.jpg",
+     "src/assets/imagenes/image-product-1.jpg",
+     "src/assets/imagenes/image-product-2.jpg",
+     "src/assets/imagenes/image-product-3.jpg",
+     "src/assets/imagenes/image-product-4.jpg",
   ];
 
   return (

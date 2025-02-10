@@ -3,6 +3,9 @@ import "./Carrito.css";
 
 
 const Carrito = ({productos}) => {
+  const [eliminar, setEliminar] = useState(false);
+
+
   return (
     <div className="carrito-container">
       <h2 className="titulo">Carrito</h2>
@@ -17,7 +20,7 @@ const Carrito = ({productos}) => {
                 <p className="nombre-producto">{producto.nombre}</p>
                 <p className="precio-producto">${producto.precio} x {producto.cantidad}</p>
               </div>
-              <button className="eliminar">✖</button>
+              <button className="eliminar" onClick={() => setEliminar(eliminar)}>✖</button>
             </li>
           ))}
         </ul>

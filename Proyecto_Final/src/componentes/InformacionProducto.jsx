@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Sumar from '../assets/imágenes/icons/icon-plus.svg';
-import Restar from '../assets/imágenes/icons/icon-minus.svg';
+import Sumar from '../assets/imagenes/icons/icon-plus.svg';
+import Restar from '../assets/imagenes/icons/icon-minus.svg';
 import "./InformacionProducto.css";
 
 
