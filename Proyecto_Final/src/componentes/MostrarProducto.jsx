@@ -1,14 +1,19 @@
 import React, { useState } from "react";
+import imagen1 from "../assets/imagenes/image-product-1.jpg";
+import imagen2 from "../assets/imagenes/image-product-2.jpg";
+import imagen3 from "../assets/imagenes/image-product-3.jpg";
+import imagen4 from "../assets/imagenes/image-product-4.jpg";
+
 import "./MostrarProducto.css"; 
 
 const MostrarProducto = () => {
-  const [imagenActual, setImagenActual] = useState("image-product-2.jpg");
+  const [imagenActual, setImagenActual] = useState(imagen1);
   
   const imagenes = [
-     "src/assets/imagenes/image-product-1.jpg",
-     "src/assets/imagenes/image-product-2.jpg",
-     "src/assets/imagenes/image-product-3.jpg",
-     "src/assets/imagenes/image-product-4.jpg",
+    imagen1,
+    imagen2,
+    imagen3,
+    imagen4,
   ];
 
   return (
