@@ -48,16 +48,26 @@
     color: #777;
   }
   
-  .acciones {
+.acciones {
     display: flex;
     align-items: center;
     gap: 10px;
+    border-radius: 5px;
+  }
+
+  .elegir-cantidad {
+    background-color: rgb(199, 195, 195);
+    align-content: center;
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
   }
   
   .boton-restar, .boton-sumar, .boton-agregar {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .boton-agregar {

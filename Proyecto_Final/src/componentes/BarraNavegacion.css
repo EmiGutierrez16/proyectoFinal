@@ -1,6 +1,6 @@
 .barra-navegacion {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos a los lados */
+    /*justify-content: space-around;  Distribuye los elementos a los lados */
     align-items: center; /* Alinea verticalmente */
     padding: 20px 40px; /* Espaciado interno */
     width: 100%; /* Ocupar todo el ancho */
@@ -11,11 +11,17 @@
   .logo {
     font-size: 24px;
     font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  .logo li {
+    list-style: none;
   }
   
   .menu {
     list-style: none;
     display: flex;
+    justify-content: flex-start;
     gap: 25px; /* Espaciado entre los elementos */
   }
   
@@ -23,6 +29,7 @@
     cursor: pointer;
     color: #666;
     font-size: 16px;
+    list-style: none;
   }
   
   .menu li:hover {
@@ -30,17 +37,21 @@
     border-bottom: 2px solid orange;
     padding-bottom: 5px;
   }
-  
-  .iconos {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+/* este estilo del menu-icon sería para pantalla grande*/
+  .menu-icon {
+    display: none;
   }
   
-  .carrito,
-  .perfil {
+  .cart-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     font-size: 20px;
     cursor: pointer;
+  }
+  .perfil-img {
+    height: 50px;
   }
   
   .carrito-container {
@@ -105,4 +116,5 @@
     position: relative; /* Asegura que el contenedor del carrito sea el referente */
     display: inline-block;
   }
+  
   
